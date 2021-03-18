@@ -46,7 +46,11 @@ $('.add-to-order').on('click', () => {
   addItemToCart('Coffee');
   incrementCartTotal(1.5);
   incrementCoffeeSold(1);
-  
+
+$('#place-order').on('click', () => {
+  resetCart();
+});
+
   // This is the body of your callback function -- add more
   // code here!
   //
@@ -55,7 +59,4 @@ $('.add-to-order').on('click', () => {
 });
 // Add your event handlers below.
 //
-
-
-
 
